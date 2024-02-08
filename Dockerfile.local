@@ -1,0 +1,11 @@
+FROM node:18-alpine
+
+WORKDIR /app
+COPY Izm.Rumis/Izm.Rumis.App/ClientApp/ /app
+
+RUN npm ci
+
+EXPOSE 3000
+
+CMD npm run dev
+

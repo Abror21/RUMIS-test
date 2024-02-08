@@ -1,0 +1,158 @@
+@tailwind base;
+
+a {
+  @apply text-primary;
+}
+
+a:hover {
+  @apply border-b-2 border-primary;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+button.ant-btn-primary, [type='button'].ant-btn-primary, [type='reset'].ant-btn-primary, [type='submit'].ant-btn-primary {
+  @apply bg-primary;
+}
+
+.ant-select .ant-select-clear .anticon {
+  vertical-align: super;
+}
+
+.ant-btn .anticon svg {
+  display: flex;
+}
+
+.stripped-pseudo-table > div:nth-child(even) {
+  background-color: #F3F4F6;
+}
+
+.stripped-pseudo-table .ant-form-item {
+  margin-bottom: 0;
+}
+
+.stripped-pseudo-table .ant-form-item .ant-form-item-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 0.5rem;
+}
+
+.vertical-label .ant-form-item-row {
+  display: block;
+}
+
+.label-bold label {
+  font-weight: 700;
+}
+
+.ant-table .ant-table-row-selected td {
+  background: transparent !important;
+}
+
+.ant-tabs-tab-btn:hover {
+  color: #1890FF !important;
+  opacity: 0.8;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890FF !important;
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  background: #1890FF !important;
+}
+
+.ant-table-content::-webkit-scrollbar {
+  height: 4px;
+}
+
+.ant-table-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #BBBBBB;
+}
+
+.ant-table-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #FAFAFA;
+}
+
+.ant-table-content {
+  scrollbar-width: thin;
+  border-radius: 10px;
+  scrollbar-color: #BBBBBB #FAFAFA;
+}
+.ant-badge-status-dot.ant-badge-status-error {
+  color: #CF1322 !important;
+}
+
+.ant-badge-status-dot.ant-badge-status-error + span {
+  color: #CF1322 !important;
+}
+.ant-table .ant-table-cell {
+  max-width: 600px;
+}
+
+.ck-editor__editable {
+  min-height: 250px !important;
+}
+
+.ckeditor-classifier-button .ant-btn.ant-btn-text {
+  padding: 3px 5px;
+  border-radius: 1px;
+}
+.ckeditor-classifier-button .ant-btn.ant-btn-text .ant-space .anticon-down>svg {
+  width: 10px;
+}
+
+.ckeditor-classifier-button-modal{
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.15);
+  background-color: white;
+  border-radius: 2px;
+}
+.ckeditor-classifier-button-modal .ant-dropdown-menu {
+  max-width: 300px;
+  max-height: 400px;
+  overflow: auto;
+  box-shadow: unset;
+}
+.ckeditor-classifier-button-modal .ant-dropdown-menu::-webkit-scrollbar {
+  width: 3px;
+}
+.ckeditor-classifier-button-modal .ant-dropdown-menu::-webkit-scrollbar-thumb {
+   background-color: rgb(181, 181, 181);
+}
+
+.ckeditor-classifier-button-modal .ant-dropdown-menu .ant-empty.ant-empty-normal {
+  margin: 5px;
+}
+
+.reports-table td {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px;
+}
+.reports-table th {
+  border: 1px solid #f0f0f0;
+  padding: 16px;
+}
+
+
+@media screen and (min-height: 750px) {
+  .h-screen-mod {
+    height: 100vh;
+  }
+  .flex-mod {
+    display: flex;
+  }
+  .rumis-logos {
+    @apply absolute bottom-3;
+  }
+}
